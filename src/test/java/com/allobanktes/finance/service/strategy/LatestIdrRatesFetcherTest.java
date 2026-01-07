@@ -30,7 +30,7 @@ class LatestIdrRatesFetcherTest {
 
     @Test
     void fetch_shouldReturnUnifiedResult_withUsdBuySpreadIdr() {
-        String username = "alfin";
+        String username = "alfinzaenalkamala";
         double rateUsd = 0.000064; // contoh
         LatestRatesResponse apiResp = new LatestRatesResponse(
                 1.0, "IDR", "2026-01-06", Map.of("USD", rateUsd, "EUR", 0.000059)
@@ -64,7 +64,7 @@ class LatestIdrRatesFetcherTest {
 
     @Test
     void fetch_shouldThrow_whenUsdRateMissing() {
-        String username = "alfin";
+        String username = "alfinzaenalkamala";
         LatestRatesResponse apiResp = new LatestRatesResponse(
                 1.0, "IDR", "2026-01-06", Map.of("EUR", 0.000059)
         );
